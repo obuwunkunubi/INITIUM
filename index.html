@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>INITIUM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+	<script src="initium.js" defer></script>
+
+	<style type="text/css">
+		body>div#main>span>div#static_links {
+			height: 30px;
+		}
+
+		body>div#main>span>form>input {
+			border: none;
+			height: 50px;
+		}
+
+		div#links>div.section {
+			display: inline-block;
+			vertical-align: top;
+			height: 200px;
+			width: 300px;
+			margin: 2px;
+		}
+
+		div#links>div.section>div {
+			padding: 15px;
+		}
+
+		div#wiper {
+			display: block;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #000000;
+			opacity: 1;
+			z-index: 100;
+			transition: .5s opacity .5s, .5s z-index .5s;
+		}
+
+		html,
+		body {
+
+			margin: 0;
+			background-color: #000000;
+		}
+	</style>
+
+</head>
+
+<body onresize="matchLinks()" onunload="">
+
+	<div id="particles-js">
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+	<script>
+		particlesJS.load('particles-js', 'particles.json',
+			function(){
+					console.log('particles.json loaded...')
+			})
+	</script>
+
+	<div id="wiper"></div>
+
+	<div id="main" style="max-width: 912px;">
+		<span style="display: block">
+			<div id="static_links">
+				<span id="clock">
+					<!-- initium.js: displayClock() fills this element -->
+				</span>
+
+				<a href="mailto:">Compose E-Mail</a>
+				<a href="steam:">Open Steam</a>
+				<a href="https://duckduckgo.com/?q=fingers+circle+joke&iax=images&ia=images">Bank Details</a>
+			</div>
+			<form method="GET" id="action">
+				<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
+			</form>
+			<div id="links">
+				<!-- initium.js: matchLinks() fills this element -->
+			</div>
+		</span>
+	</div>
+
+</body>
+
+</html>
