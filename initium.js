@@ -22,12 +22,12 @@ var sites = {
 		"Rotten Tomatoes": "https://www.rottentomatoes.com/"
 	},
 	"School": {
-		"Inbox": "https://inbox.google.com/",
 		"Gmail": "https://mail.google.com/mail/u/0/",
 		"Keep": "https://keep.google.com/",
 		"Drive": "https://drive.google.com/drive/u/1/my-drive",
 		"GFML": "http://www.gfml.si/",
-		"Moj Arnes": "https://moj.arnes.si/"
+		"Moj Arnes": "https://moj.arnes.si/",
+		"Pons": "https://sl.pons.com/prevod/"
 	},
 	"Shopping": {
 		"Amazon": "https://www.amazon.de/?language=en_GB",
@@ -35,7 +35,9 @@ var sites = {
 		"AliExpress": "https://www.aliexpress.com/",
 		"GearBest": "https://www.gearbest.com/",
 		"Banggood": "https://www.banggood.com/",
+		"Bolha": "https://www.bolha.com/",
 		"PayPal": "https://www.paypal.com/"
+
 	},
 	"Piracy": {
 		"RARBG": "https://rarbg.to/",
@@ -46,6 +48,7 @@ var sites = {
 	},
 	"Other": {
 		"GitHub": "https://github.com/",
+		"Stack Overflow": "https://stackoverflow.com/",
 		"Website": "https://www.markobakan.xyz/",
 		"Meteo": "http://meteo.arso.gov.si/",
 		"ZAMG": "https://www.zamg.ac.at/cms/de/wetter/wetteranimation",
@@ -55,8 +58,8 @@ var sites = {
 };
 
 var search = {
-	"default": "https://duckduckgo.com/",
-	"g": "https://google.com/search",
+	"default": "https://google.si/search",
+	"d": "https://duckduckgo.com/",
 	"s": "https://startpage.com/do/search",
 	"r": "https://reddit.com/search"
 };
